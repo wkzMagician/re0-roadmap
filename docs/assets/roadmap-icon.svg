@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Re0-Roadmap</title>
+  <desc id="desc">An ivory learning path connects milestones on a forest green tile and reaches an amber destination.</desc>
+  <rect width="256" height="256" rx="60" fill="#204d3e"/>
+  <path d="M64 190V146a18 18 0 0 1 18-18h92a18 18 0 0 0 18-18V64" stroke="#f4f1ea" stroke-width="14" stroke-linecap="round"/>
+  <path d="M128 128V82" stroke="#8bb39d" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="128" cy="76" r="11" fill="#8bb39d"/>
+  <circle cx="64" cy="190" r="18" fill="#f4f1ea"/>
+  <circle cx="128" cy="128" r="19" fill="#204d3e" stroke="#f4f1ea" stroke-width="10"/>
+  <circle cx="192" cy="64" r="24" fill="#c88642"/>
+  <path d="m182 64 7 7 13-14" stroke="#204d3e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

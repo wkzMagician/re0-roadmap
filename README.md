@@ -1,10 +1,14 @@
-# Readmap
+<p align="center">
+  <img src="docs/assets/roadmap-icon.svg" alt="Re0-Roadmap 应用图标：连接学习里程碑的路线" width="128" height="128" />
+</p>
+
+# Re0-Roadmap
 
 将研究资料组织成可编辑的阅读路线图：用节点归纳主题，用箭头表达学习前置关系，并记录每份资料的阅读进度。
 
 你可以使用任意 LLM 生成路线图，手动保存为 JSON 文件，再在本地页面中阅读和调整。项目使用 React + Vite，路线图和阅读状态保存在本地文件中。
 
-**快速开始：**启动应用，先浏览内置路线图；创建自己的路线图时，复制 [生成提示词](prompts/create-roadmap.md)，让 LLM 输出 JSON，然后按下文保存文件。
+**快速开始：** 启动应用，先浏览内置路线图；创建自己的路线图时，复制 [生成提示词](prompts/create-roadmap.md)，让 LLM 输出 JSON，然后按下文保存文件。
 
 ## 目录
 
@@ -22,6 +26,10 @@
 
 安装 Node.js 20.19+（20.x）或 22.12+，以及 npm。首次安装依赖需要联网。
 
+**还没安装 Node.js？** 先到 [Node.js 官网](https://nodejs.org/en/download) 选择适合自己系统的当前 LTS 版本。Windows / macOS 可下载安装程序，保留默认的 npm 和 PATH 选项；Linux 按官网对应发行版的说明安装。安装完成后，重新打开终端或再次双击启动脚本。
+
+可在新终端执行 `node --version` 和 `npm --version` 确认安装成功。若仍提示找不到命令，请检查 Node.js 是否已加入 PATH。
+
 ### 一键启动
 
 | 系统 | 操作 |
@@ -29,7 +37,7 @@
 | Windows | 双击 [start.bat](start.bat)。 |
 | macOS / Linux | 在项目目录执行 `sh start.sh`。 |
 
-脚本会在缺少 `node_modules` 时安装依赖，并打开浏览器。默认地址为 <http://127.0.0.1:5173>。使用期间保持终端窗口打开，按 Ctrl+C 停止服务。
+脚本会先检查 Node.js 和 npm；未安装时会显示安装指引并退出，不会自动安装系统软件。检测通过后，脚本会在缺少 `node_modules` 时安装依赖，并打开浏览器。默认地址为 <http://127.0.0.1:5173>。使用期间保持终端窗口打开，按 Ctrl+C 停止服务。
 
 ### 手动启动
 
@@ -40,7 +48,7 @@ npm ci
 npm run dev -- --host 127.0.0.1 --port 5173 --strictPort --open
 ```
 
-仓库附带一份 [Agent Systems 研究路线图](data/roadmaps/agent-systems-research-landscape-v1.json)，可以先用它熟悉界面。
+仓库附带一份 [从零构建个人网站路线图](data/roadmaps/personal-website-from-zero.json)，可以先用它熟悉界面。
 
 ## 创建自己的路线图
 
@@ -142,7 +150,7 @@ JSON 文件就是你的路线图数据和阅读进度，可以自行备份或纳
 
 依赖表示“理解后者需要先学习前者”，不要把主题相关性或发表年份直接当作依赖。图谱可以包含多个起点和独立分支。
 
-更完整的实际数据见 [内置路线图](data/roadmaps/agent-systems-research-landscape-v1.json)。
+更完整的实际数据见 [从零构建个人网站路线图](data/roadmaps/personal-website-from-zero.json)。
 
 ## 常见问题
 
