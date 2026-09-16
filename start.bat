@@ -21,6 +21,9 @@ exit /b 0
 :missing_runtime
 echo Node.js and npm are required. Install a supported Node.js LTS version:
 echo https://nodejs.org/en/download
+echo Choose the current LTS installer and keep npm and Add to PATH enabled.
+echo Requires Node.js 20.19+ ^(20.x^) or 22.12+.
+echo After installation, reopen your terminal or double-click start.bat again.
 pause
 exit /b 1
 
