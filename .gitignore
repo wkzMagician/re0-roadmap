@@ -6,3 +6,10 @@ output/
 .env.*
 !.env.example
 *.log
+.serena
+
+# Ignore local data except the personal website roadmap.
+/data/*
+!/data/roadmaps/
+/data/roadmaps/*
+!/data/roadmaps/personal-website-from-zero.json
